@@ -1,0 +1,124 @@
+html {
+	font-size: 16px;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background: #FDFDFD;
+	font-family: 'Roboto Slab', sans-serif;
+	height: 100%;
+}
+
+main {
+	box-shadow: inset 0 0 40px black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.container {
+	text-align: center;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav li {
+	display: block;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav a i {
+	color: #222;
+}
+
+nav a:active i.fa-facebook-square {
+	color: #3b5998;
+}
+
+nav a:active i.fa-github-square {
+	color: #c9510c;
+}
+
+nav a:active i.fa-envelope-square {
+	color: #fccc63;
+}
+
+nav a:active i.fa-linkedin-square {
+	color: #007bb5;
+}
+
+nav a:active i.fa-youtube-square {
+	color: #ff0000;
+}
+
+nav a span.show-mobile {
+	padding-left: .5rem;
+}
+
+@media (min-width: 750px) {
+
+	h1 {
+		font-size: 5rem;
+	}
+
+	main {
+		box-shadow: inset 0 0 80px black;
+	}
+
+	p.large {
+		font-size: 1.8rem;
+	}
+
+	nav li {
+		display: inline-block;
+	}
+
+	nav a {
+		font-size: 5rem;
+		padding: 0 1rem;
+	}
+
+	nav a i {
+		transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	}
+
+	nav a:hover i {
+		transform: scale(1.2, 1.2);
+	}
+
+	nav a:hover i.fa-facebook-square {
+		color: #3b5998;
+	}
+
+	nav a:hover i.fa-github-square {
+		color: #c9510c;
+	}
+
+	nav a:hover i.fa-envelope-square {
+		color: #fccc63;
+	}
+
+	nav a:hover i.fa-linkedin-square {
+		color: #007bb5;
+	}
+
+	nav a:hover i.fa-youtube-square {
+		color: #ff0000;
+	}
+
+	.show-mobile {
+		display: none;
+	}
+
+}
