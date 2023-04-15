@@ -1,5 +1,11 @@
 <script setup lang="ts">
 import AvatarImg from '~/assets/img/avatar.svg?component'
+import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
+
+const projectsQuery: QueryBuilderParams = {
+  path: '/projects',
+  limit: 3,
+}
 </script>
 
 <template>
@@ -43,4 +49,12 @@ import AvatarImg from '~/assets/img/avatar.svg?component'
         class="drop-shadow-[0_24px_32px_hsla(244,100%,13%,.3)]" />
     </div>
   </div>
+  <ContentList :query="projectsQuery" v-slot="{ list }">
+    <div class="grid grid-cols-3 gap-4 mt-20 items-center justify-between">
+      <ProjectItem
+        v-for="project in list"
+        :key="project._path"
+        :project="project" />
+    </div>
+  </ContentList>
 </template>
