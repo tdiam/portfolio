@@ -1,4 +1,6 @@
 <script setup>
+const route = useRoute()
+
 const menu = [
   {
     title: 'Home',
@@ -37,5 +39,15 @@ const menu = [
         </li>
       </ul>
     </div>
+    <NuxtLink
+      to="/projects"
+      v-if="route.path.startsWith('/projects')"
+      :class="`
+        ml-auto md:order-2 rounded border border-slate-700 -mt-2 px-4 py-1
+        font-semibold text-slate-700 uppercase transition
+        hover:border-black hover:text-black
+      `">
+      Browse projects
+    </NuxtLink>
   </nav>
 </template>
