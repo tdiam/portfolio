@@ -50,7 +50,7 @@ const projectsQuery: QueryBuilderParams = {
     </div>
   </div>
   <ContentList :query="projectsQuery" v-slot="{ list }">
-    <div class="grid grid-cols-3 gap-4 mt-20 items-center justify-between">
+    <div class="grid grid-cols-3 gap-4 mt-20 items-start justify-between">
       <ProjectItem
         v-for="project in list"
         :key="project._path"

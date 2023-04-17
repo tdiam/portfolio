@@ -4,9 +4,18 @@ defineProps(['project'])
 
 <template>
   <div class="flex flex-col rounded-lg shadow-lg bg-white">
-    <div class="px-6 py-4">
-      <h4 class="font-bold">{{ project.title }}</h4>
-      <ContentRenderer :value="project" :excerpt="true" />
+    <div class="p-6">
+      <ul class="flex flex-row flex-wrap">
+        <li v-for="tag in project.tags" class="mr-2">
+          <Tag :tag="tag" />
+        </li>
+      </ul>
+      <h4 class="font-bold mt-3">
+        <NuxtLink :to="project._path">
+          {{ project.title }}
+        </NuxtLink>
+      </h4>
+      <ContentRenderer :value="project" :excerpt="true" class="mt-3" />
     </div>
   </div>
 </template>
