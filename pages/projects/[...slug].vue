@@ -10,6 +10,13 @@
           {{ doc.dateStart }}&ndash;{{ doc.dateEnd }}
         </span>
       </p>
+      <img v-if="doc.image" :src="doc.image" class="w-[80%] mt-12 mx-auto project-image shadow-xl shadow-slate-800/40 rounded-xl" />
     </ContentDoc>
   </div>
 </template>
+
+<style scoped>
+.project-image {
+  transform: perspective(800px) rotateX(10deg);
+}
+</style>

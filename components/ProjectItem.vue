@@ -4,6 +4,7 @@ defineProps(['project'])
 
 <template>
   <div class="flex flex-col rounded-lg shadow-lg bg-white">
+    <img v-if="project.image" :src="project.image" class="rounded-t-lg" />
     <div class="p-6">
       <ul class="flex flex-row flex-wrap">
         <li v-for="tag in project.tags" class="mr-2">
