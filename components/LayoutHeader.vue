@@ -1,24 +1,33 @@
 <script setup>
 const route = useRoute()
 
-const menu = [
+const menu = computed(() => [
   {
     title: 'Home',
-    active: true,
+    path: '/',
+    active: route.path === '/',
   },
   {
     title: 'About',
+    path: '/about',
+    active: route.path === '/about',
   },
   {
     title: 'Work',
+    path: '/projects',
+    active: route.path.startsWith('/projects'),
   },
   {
     title: 'Side quests',
+    path: '/side-quests',
+    active: route.path.startsWith('/side-quests'),
   },
   {
     title: 'Contact',
+    path: '/contact',
+    active: route.path === '/contact',
   },
-]
+])
 </script>
 
 <template>
@@ -27,7 +36,7 @@ const menu = [
       <ul class="flex flex-col mt-4 md:flex-row md:space-x-12 md:mt-0 md:font-semibold">
         <li v-for="item in menu">
           <NuxtLink
-            to="/"
+            :to="item.path"
             :class="`
               block py-2 pl-3 pr-4 md:p-0 border-purple-900
               hover:text-purple-900 hover:border-b-4
@@ -41,7 +50,6 @@ const menu = [
     </div>
     <NuxtLink
       to="/projects"
-      v-if="route.path.startsWith('/projects')"
       :class="`
         ml-auto md:order-2 rounded border border-slate-700 -mt-2 px-4 py-1
         font-semibold text-slate-700 uppercase transition
