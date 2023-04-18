@@ -13,6 +13,10 @@
       <div class="pb-12">
         <img v-if="doc.image" :src="doc.image" class="w-[80%] mt-12 mx-auto project-image shadow-xl shadow-slate-800/40 rounded-xl" />
       </div>
+      <h3 class="mt-16 mb-6 text-2xl font-bold text-slate-900">
+        Project description
+      </h3>
+      <ContentRenderer :value="doc" />
     </ContentDoc>
   </div>
 </template>
