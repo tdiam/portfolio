@@ -45,7 +45,7 @@ const menu = [
       :class="`
         ml-auto md:order-2 rounded border border-slate-700 -mt-2 px-4 py-1
         font-semibold text-slate-700 uppercase transition
-        hover:border-black hover:text-black
+        hover:border-black hover:ring-1 hover:ring-black hover:ring-inset hover:text-black
       `">
       Browse projects
     </NuxtLink>
