@@ -1,7 +1,7 @@
 <template>
   <div>
     <ContentDoc v-slot="{ doc }">
-      <h1 class="text-5xl text-center font-extrabold text-slate-900 mt-12">
+      <h1 class="mt-12 text-5xl text-center font-extrabold text-slate-900">
         {{ doc.title }}
       </h1>
       <p class="flex justify-center divide-x divide-slate-500 text-lg leading-none font-medium text-slate-600 mt-3">
