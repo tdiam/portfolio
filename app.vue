@@ -7,5 +7,6 @@
         <NuxtPage />
       </main>
     </div>
+    <LayoutFooter />
   </div>
 </template>
