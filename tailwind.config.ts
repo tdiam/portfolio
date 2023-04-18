@@ -6,4 +6,7 @@ export default {
       sans: ['Raleway', ...defaultTheme.fontFamily.sans],
     },
   },
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
