@@ -9,7 +9,7 @@ const projectsQuery: QueryBuilderParams = {
 </script>
 
 <template>
-  <div class="flex flex-col mt-20 items-center justify-between md:flex-row md:space-x-12">
+  <div class="flex flex-col items-center justify-between md:flex-row md:space-x-12">
     <div>
       <h2 class="text-2xl tracking-wider font-semibold text-slate-800">
         Hi, I'm Theodoros Diamantidis!

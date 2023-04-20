@@ -7,7 +7,7 @@ const projectsQuery: QueryBuilderParams = {
 </script>
 
 <template>
-  <h1 class="mt-8 text-center text-3xl font-bold tracking-wider">
+  <h1 class="text-center text-3xl font-bold tracking-wider">
     Projects
   </h1>
   <ContentList :query="projectsQuery" v-slot="{ list }">
