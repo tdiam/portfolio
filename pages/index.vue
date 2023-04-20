@@ -6,6 +6,26 @@ const projectsQuery: QueryBuilderParams = {
   path: '/projects',
   limit: 3,
 }
+
+const aboutTabs = {
+  experience: {
+    title: 'Experience',
+    active: true,
+  },
+  education: {
+    title: 'Education',
+    active: false,
+  },
+  awards: {
+    title: 'Awards',
+    active: false,
+  }
+}
+
+const aboutTab = ref('experience')
+function setAboutTab(tab: string) {
+  aboutTab.value = tab
+}
 </script>
 
 <template>
@@ -71,7 +91,7 @@ const projectsQuery: QueryBuilderParams = {
   </h3>
   <div class="grid grid-cols-[minmax(0,2fr),minmax(0,1fr)] gap-8 justify-between">
     <div>
-      <div class="text-xl leading-relaxed text-slate-700">
+      <div class="text-xl leading-relaxed text-slate-800">
         <p>
           I&#39;ve been coding for more than ten years for fun, and lately in professional
           and volunteering environments.
@@ -80,18 +100,31 @@ const projectsQuery: QueryBuilderParams = {
           Currently in Mytilene, Greece.
         </p>
       </div>
+      <ul class="mt-8 flex space-x-12 text-xl font-bold text-slate-600">
+        <li
+          v-for="(title, key) in {experience: 'Experience', education: 'Education', awards: 'Awards'}">
+          <button
+            :class="`
+              hover:text-purple-900 hover:border-b-4 hover:border-purple-900
+              ${aboutTab === key ? 'text-purple-900 border-b-4 border-purple-900' : ''}
+              `"
+            @click="() => setAboutTab(key)">
+            {{ title }}
+          </button>
+        </li>
+      </ul>
     </div>
     <div>
-      <ul class="text-xl text-slate-700 align-middle space-y-2 pb-4 border-b-2 border-gray-300">
+      <ul class="text-xl text-slate-800 align-middle space-y-2 pb-4 border-b-2 border-gray-300">
         <li>
           <a href="https://github.com/tdiam" class="group group-hover:text-black">
-            <Icon name="uil:github" size="1.25em" class="-mt-0.5 mr-0.5 text-slate-600 group-hover:text-black" />
+            <Icon name="uil:github" size="1.25em" class="-mt-0.5 mr-0.5 text-slate-700 group-hover:text-black" />
             github.com/tdiam
           </a>
         </li>
         <li>
           <a href="https://linkedin.com/in/tdiam" class="group group-hover:text-black">
-            <Icon name="uil:linkedin" size="1.25em" class="-mt-0.5 mr-0.5 text-slate-600 group-hover:text-black" />
+            <Icon name="uil:linkedin" size="1.25em" class="-mt-0.5 mr-0.5 text-slate-700 group-hover:text-black" />
             linkedin.com/in/tdiam
           </a>
         </li>
