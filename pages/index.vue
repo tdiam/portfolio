@@ -66,4 +66,34 @@ const projectsQuery: QueryBuilderParams = {
       </NuxtLink>
     </div>
   </ContentList>
+  <h3 class="mt-24 mb-6 text-2xl tracking-wider font-bold text-slate-800">
+    About me
+  </h3>
+  <div class="grid grid-cols-[minmax(0,2fr),minmax(0,1fr)] gap-8 justify-between">
+    <div>
+      <div class="text-xl leading-relaxed text-slate-800">
+        <p>
+          I&#39;ve been coding for more than ten years for fun, and lately in professional
+          and volunteering environments.
+        </p>
+        <p class="mt-4">
+          Currently in Mytilene, Greece.
+        </p>
+      </div>
+    </div>
+    <div>
+      <ul class="text-xl text-slate-600 space-y-2">
+        <li>
+          <a href="https://github.com/tdiam" class="hover:text-black">
+            github.com/tdiam
+          </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/tdiam" class="hover:text-black">
+            linkedin.com/in/tdiam
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </template>
