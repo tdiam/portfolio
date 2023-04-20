@@ -71,7 +71,7 @@ const projectsQuery: QueryBuilderParams = {
   </h3>
   <div class="grid grid-cols-[minmax(0,2fr),minmax(0,1fr)] gap-8 justify-between">
     <div>
-      <div class="text-xl leading-relaxed text-slate-800">
+      <div class="text-xl leading-relaxed text-slate-700">
         <p>
           I&#39;ve been coding for more than ten years for fun, and lately in professional
           and volunteering environments.
@@ -82,14 +82,16 @@ const projectsQuery: QueryBuilderParams = {
       </div>
     </div>
     <div>
-      <ul class="text-xl text-slate-600 space-y-2">
+      <ul class="text-xl text-slate-700 align-middle space-y-2 pb-4 border-b-2 border-gray-300">
         <li>
-          <a href="https://github.com/tdiam" class="hover:text-black">
+          <a href="https://github.com/tdiam" class="group group-hover:text-black">
+            <Icon name="uil:github" size="1.25em" class="-mt-0.5 mr-0.5 text-slate-600 group-hover:text-black" />
             github.com/tdiam
           </a>
         </li>
         <li>
-          <a href="https://linkedin.com/in/tdiam" class="hover:text-black">
+          <a href="https://linkedin.com/in/tdiam" class="group group-hover:text-black">
+            <Icon name="uil:linkedin" size="1.25em" class="-mt-0.5 mr-0.5 text-slate-600 group-hover:text-black" />
             linkedin.com/in/tdiam
           </a>
         </li>
