@@ -56,5 +56,14 @@ const projectsQuery: QueryBuilderParams = {
         :key="project._path"
         :project="project" />
     </div>
+    <div class="flex justify-end mt-4">
+      <NuxtLink
+        to="/projects"
+        :class="`
+          py-2 text-lg font-semibold text-slate-700 hover:text-black
+        `">
+        VIEW ALL PROJECTS &raquo;
+      </NuxtLink>
+    </div>
   </ContentList>
 </template>
