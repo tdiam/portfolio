@@ -19,7 +19,7 @@ const aboutTabs = {
   awards: {
     title: 'Awards',
     active: false,
-  }
+  },
 }
 
 const aboutTab = ref('experience')
@@ -102,17 +102,28 @@ function setAboutTab(tab: string) {
       </div>
       <ul class="mt-8 flex space-x-12 text-xl font-bold text-slate-600">
         <li
-          v-for="(title, key) in {experience: 'Experience', education: 'Education', awards: 'Awards'}">
+          v-for="(tab, key) in aboutTabs">
           <button
             :class="`
               hover:text-purple-900 hover:border-b-4 hover:border-purple-900
               ${aboutTab === key ? 'text-purple-900 border-b-4 border-purple-900' : ''}
               `"
             @click="() => setAboutTab(key)">
-            {{ title }}
+            {{ tab.title }}
           </button>
         </li>
       </ul>
+      <div class="mt-8">
+        <div v-show="aboutTab === 'experience'">
+          <AboutExperience :limit="3" />
+        </div>
+        <div v-show="aboutTab === 'education'">
+          <AboutEducation :limit="3" />
+        </div>
+        <div v-show="aboutTab === 'awards'">
+          <AboutAwards :limit="3" />
+        </div>
+      </div>
     </div>
     <div>
       <ul class="text-xl text-slate-800 align-middle space-y-2 pb-4 border-b-2 border-gray-300">
