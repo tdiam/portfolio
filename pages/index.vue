@@ -140,6 +140,9 @@ function setAboutTab(tab: string) {
           </a>
         </li>
       </ul>
+      <div class="mt-16">
+        <Skills />
+      </div>
     </div>
   </div>
 </template>
