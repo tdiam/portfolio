@@ -7,7 +7,7 @@ defineProps(['tag'])
     href=""
     :class="`
       inline-block px-2 bg-purple-900 border border-transparent
-      text-sm font-bold text-white rounded-full
+      text-sm font-bold text-white rounded-full transition
       hover:bg-transparent hover:text-purple-900 hover:border-purple-900
       `">
     {{ tag }}

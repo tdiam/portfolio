@@ -105,7 +105,7 @@ function setAboutTab(tab: string) {
           v-for="(tab, key) in aboutTabs">
           <button
             :class="`
-              hover:text-purple-900 hover:border-b-4 hover:border-purple-900
+              transition hover:text-purple-900 hover:border-b-4 hover:border-purple-900
               ${aboutTab === key ? 'text-purple-900 border-b-4 border-purple-900' : ''}
               `"
             @click="() => setAboutTab(key)">
