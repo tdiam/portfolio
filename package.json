@@ -14,5 +14,8 @@
     "nuxt": "^3.3.1",
     "nuxt-icon": "^0.3.3",
     "vite-svg-loader": "^4.0.0"
+  },
+  "dependencies": {
+    "flowbite": "^1.6.5"
   }
 }
