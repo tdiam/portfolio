@@ -17,11 +17,11 @@ export const useMenu = () => {
       path: '/projects',
       active: route.path.startsWith('/projects'),
     },
-    {
-      title: 'Side quests',
-      path: '/side-quests',
-      active: route.path.startsWith('/side-quests'),
-    },
+    // {
+    //   title: 'Side quests',
+    //   path: '/side-quests',
+    //   active: route.path.startsWith('/side-quests'),
+    // },
     {
       title: 'Contact',
       path: '/contact',
