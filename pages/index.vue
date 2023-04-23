@@ -45,7 +45,7 @@ function setAboutTab(tab: string) {
       </p>
       <div class="mt-9 flex flex-row space-x-4">
         <NuxtLink
-          to="/"
+          to="/projects"
           :class="`
             rounded border border-transparent bg-purple-900 px-4 py-1 text-lg
             font-semibold text-white uppercase transition
