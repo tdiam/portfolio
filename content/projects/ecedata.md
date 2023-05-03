@@ -7,7 +7,6 @@ tags:
   - python
   - django
   - graphql
-  - etl
 ---
 
 Hello
