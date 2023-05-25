@@ -1,12 +1,12 @@
 ---
 title: Studyplanner
-description: 
+description: Web app for university students
 dateStart: Jul 2018
 dateEnd: present
 tags:
   - react
   - preact
-  - tailwind
+  - tailwindcss
   - graphql
 ---
 
