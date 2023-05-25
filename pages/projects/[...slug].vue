@@ -9,6 +9,11 @@
         {{ doc.dateStart }}&ndash;{{ doc.dateEnd }}
       </span>
     </p>
+    <ul class="flex flex-row justify-center flex-wrap mt-6">
+      <li v-for="tag in doc.tags" class="mr-2">
+        <Tag :tag="tag" />
+      </li>
+    </ul>
     <div class="pb-12">
       <img v-if="doc.image" :src="doc.image" class="w-[80%] mt-12 mx-auto project-image shadow-xl shadow-slate-800/40 rounded-xl" />
     </div>
