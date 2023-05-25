@@ -9,7 +9,7 @@ defineProps(['project'])
     </NuxtLink>
     <div class="p-6">
       <ul class="flex flex-row flex-wrap">
-        <li v-for="tag in project.tags" class="mr-2">
+        <li v-for="tag in project.tags" class="mr-2 mb-1">
           <Tag :tag="tag" />
         </li>
       </ul>
