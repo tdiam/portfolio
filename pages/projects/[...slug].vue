@@ -9,18 +9,31 @@
         {{ doc.dateStart }}&ndash;{{ doc.dateEnd }}
       </span>
     </p>
-    <ul class="flex flex-row justify-center flex-wrap mt-6">
-      <li v-for="tag in doc.tags" class="mr-2">
+    <ul class="flex flex-row justify-center flex-wrap mt-8 space-x-2">
+      <li v-for="tag in doc.tags">
         <Tag :tag="tag" />
       </li>
     </ul>
     <div class="pb-12">
-      <img v-if="doc.image" :src="doc.image" class="w-[80%] mt-12 mx-auto project-image shadow-xl shadow-slate-800/40 rounded-xl" />
+      <img
+        v-if="doc.image"
+        :src="doc.image"
+        :class="`
+          project-image w-[80%]
+          mt-12 mx-auto shadow-xl shadow-slate-800/40 rounded-xl
+        `" />
     </div>
-    <h3 class="mt-12 mb-6 text-2xl font-bold text-slate-900">
-      Project description
+    <h3 class="mt-12 mb-6 text-2xl font-bold text-slate-900" id="project-description">
+      <a href="#project-description">Project description</a>
     </h3>
-    <ContentRenderer :value="doc" class="prose-slate prose-lg" />
+    <ContentRenderer
+      :value="doc"
+      :class="`
+        text-justify prose-slate prose-lg
+        prose-strong:font-semibold
+        prose-headings:font-bold prose-headings:text-slate-900
+        prose-ul:list-disc
+      `" />
   </ContentDoc>
 </template>
 
