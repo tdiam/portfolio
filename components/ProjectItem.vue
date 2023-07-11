@@ -1,5 +1,7 @@
 <script setup lang="ts">
 defineProps(['project'])
+
+const TAG_LIMIT = 5
 </script>
 
 <template>
@@ -9,7 +11,7 @@ defineProps(['project'])
     </NuxtLink>
     <div class="p-6">
       <ul class="flex flex-row flex-wrap">
-        <li v-for="tag in project.tags" class="mr-2 mb-1">
+        <li v-for="tag in project.tags.slice(0, TAG_LIMIT)" class="mr-2 mb-1">
           <Tag :tag="tag" />
         </li>
       </ul>

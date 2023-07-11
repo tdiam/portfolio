@@ -11,6 +11,7 @@ tags:
   - graphql
   - parcel
   - apollo
+  - shmmy
 ---
 
 Tool for university students to view class schedules, select courses to attend,

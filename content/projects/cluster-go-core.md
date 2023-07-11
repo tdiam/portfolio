@@ -16,6 +16,7 @@ tags:
   - gitlab
   - docker
   - bash
+  - cluster
 ---
 
 Enterprise plugin for WooCommerce stores that synchronizes their product

@@ -15,6 +15,7 @@ tags:
   - lxml
   - selenium
   - camelot
+  - shmmy
 ---
 
 Python project that scrapes data from the website and documents of my university,

@@ -9,6 +9,7 @@ tags:
   - graphql
   - mediawiki
   - cli
+  - shmmy
 ---
 
 Python script for updating student-run university wiki with courses and exams

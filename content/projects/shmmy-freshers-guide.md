@@ -16,6 +16,7 @@ tags:
   - parcel
   - composer
   - bash
+  - shmmy
 ---
 
 Web app that renders the wiki page of a student-written freshers' guide in a

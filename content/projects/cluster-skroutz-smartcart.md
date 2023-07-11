@@ -15,6 +15,7 @@ tags:
   - gitlab
   - docker
   - bash
+  - cluster
 ---
 
 WooCommerce plugin that syncs sales data from Skroutz.gr, a Greek marketplace,
