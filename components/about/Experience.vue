@@ -17,6 +17,7 @@ const query: QueryBuilderParams = {
         :data="item">
         <template #actions>
           <NuxtLink
+            v-if="item.tag"
             :to="`/projects/tag/${item.tag}`"
             :class="`
               mt-3 inline-block rounded border border-slate-700 px-3 py-1
