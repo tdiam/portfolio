@@ -8,7 +8,7 @@ tags:
   - python
   - django
   - graphql
-  - postgres
+  - postgresql
   - scraping
   - cli
   - graphene-python

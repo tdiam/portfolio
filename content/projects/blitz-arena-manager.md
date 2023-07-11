@@ -9,9 +9,8 @@ tags:
   - express
   - vue
   - pinia
-  - postgres
-  - typescript
   - postgresql
+  - typescript
   - sequelize
   - vite
   - vuex

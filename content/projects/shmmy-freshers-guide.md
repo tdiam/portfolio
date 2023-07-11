@@ -9,7 +9,7 @@ tags:
   - docker
   - twig
   - mediawiki
-  - docker compose
+  - docker-compose
   - css
   - js
   - pjax
