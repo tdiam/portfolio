@@ -23,6 +23,14 @@
           mt-12 mx-auto shadow-xl shadow-slate-800/40 rounded-xl
         `" />
     </div>
+    <template v-if="doc.links?.length">
+      <ul class="flex flex-row flex-wrap justify-center text-lg">
+        <li v-for="(link, idx) in doc.links" class="mr-2 mb-1">
+          <span v-if="idx > 0" class="mr-2" aria-hidden="true">&bull;</span>
+          <ProseA :href="link.url">{{ link.title }}</ProseA>
+        </li>
+      </ul>
+    </template>
     <h3 class="mt-12 mb-6 text-2xl font-bold text-slate-900" id="project-description">
       <a href="#project-description">Project description</a>
     </h3>
