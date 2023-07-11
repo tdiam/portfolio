@@ -8,6 +8,7 @@ tags:
   - python
   - graphql
   - mediawiki
+  - cli
 ---
 
 Python script for updating student-run university wiki with courses and exams
@@ -28,7 +29,7 @@ announcement dates for each course in the current exam period, with data from
 
 * :md-tag{tag="Python"} comprises the codebase of this project.
 * The [Click](https://click.palletsprojects.com/en/8.1.x/) package is employed
-to build the CLI of the bot.
+to build the :md-tag{tag="CLI"} of the bot.
 * :md-tag{tag="GraphQL"} is used to query the courses and exams data from
 ecedata.
 

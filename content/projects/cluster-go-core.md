@@ -10,7 +10,12 @@ tags:
   - woocommerce
   - erp
   - jquery
+  - bootstrap
   - css
+  - drupal
+  - gitlab
+  - docker
+  - bash
 ---
 
 Enterprise plugin for WooCommerce stores that synchronizes their product

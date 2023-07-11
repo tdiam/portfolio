@@ -6,6 +6,7 @@ dateEnd: Oct 2017
 image: /projects/kallinikos.png
 tags:
   - bootstrap
+  - css
   - jekyll
   - jquery
 ---

@@ -6,9 +6,16 @@ dateEnd: Feb 2020
 image: /projects/blitz-arena-manager.png
 tags:
   - node.js
+  - express
   - vue
-  - vuex
+  - pinia
   - postgres
+  - typescript
+  - postgresql
+  - sequelize
+  - vite
+  - vuex
+  - webpack
 ---
 
 A full-stack web application designed for conducting over-the-board blitz chess

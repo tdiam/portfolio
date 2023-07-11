@@ -7,8 +7,10 @@ image: /projects/studyplanner.png
 tags:
   - react
   - preact
-  - tailwindcss
+  - tailwind
   - graphql
+  - parcel
+  - apollo
 ---
 
 Tool for university students to view class schedules, select courses to attend,

@@ -8,8 +8,9 @@ tags:
   - vue
   - pinia
   - typescript
-  - tailwindcss
+  - tailwind
   - daisyui
+  - vite
   - github-actions
   - indexeddb
 ---
@@ -40,5 +41,5 @@ and UI components.
 * :md-tag{tag="Github Actions"} orchestrate the deployment of the app to
 GitHub pages.
 
-Also, [JsStore](https://jsstore.net/) is used for IndexedDB operations, and
-[Papaparse](https://www.papaparse.com/) for CSV parsing.
+Also, [JsStore](https://jsstore.net/) is used for :md-tag{tag="IndexedDB"}
+operations, and [Papaparse](https://www.papaparse.com/) for CSV parsing.

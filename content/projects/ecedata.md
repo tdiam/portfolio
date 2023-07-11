@@ -10,6 +10,11 @@ tags:
   - graphql
   - postgres
   - scraping
+  - cli
+  - graphene-python
+  - lxml
+  - selenium
+  - camelot
 ---
 
 Python project that scrapes data from the website and documents of my university,

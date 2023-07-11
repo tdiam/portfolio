@@ -10,6 +10,12 @@ tags:
   - twig
   - mediawiki
   - docker compose
+  - css
+  - js
+  - pjax
+  - parcel
+  - composer
+  - bash
 ---
 
 Web app that renders the wiki page of a student-written freshers' guide in a

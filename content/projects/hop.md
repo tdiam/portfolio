@@ -6,6 +6,7 @@ dateEnd: Mar 2019
 image: /projects/hop.png
 tags:
   - bash
+  - cli
 ---
 
 Simple Bash utility for navigating quickly to pre-configured directories.

@@ -10,6 +10,8 @@ tags:
   - react
   - node.js
   - graphql
+  - css
+  - apollo
 ---
 
 Web app displayed at a university monitor with live info about upcoming classes,

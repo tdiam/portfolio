@@ -7,6 +7,7 @@ image: /projects/slack-deleter.png
 tags:
   - python
   - cli
+  - poetry
 ---
 
 CLI tool to bulk delete messages from a Slack workspace.

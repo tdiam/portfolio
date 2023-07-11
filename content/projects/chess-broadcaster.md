@@ -9,6 +9,8 @@ tags:
   - vue
   - jquery
   - bootstrap
+  - ajax
+  - json
 ---
 
 Facilitates over-the-board games by broadcasting the moves live to the

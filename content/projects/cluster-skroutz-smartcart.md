@@ -9,6 +9,12 @@ tags:
   - wordpress
   - woocommerce
   - webhooks
+  - jquery
+  - ajax
+  - css
+  - gitlab
+  - docker
+  - bash
 ---
 
 WooCommerce plugin that syncs sales data from Skroutz.gr, a Greek marketplace,

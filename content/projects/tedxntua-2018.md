@@ -9,6 +9,13 @@ tags:
   - laravel
   - bootstrap
   - jquery
+  - mysql
+  - twig
+  - css
+  - scss
+  - pjax
+  - webpack
+  - apache
 ---
 
 Event website built on Laravel, with information about the conference speakers,

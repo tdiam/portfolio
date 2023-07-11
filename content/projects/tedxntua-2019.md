@@ -9,6 +9,14 @@ tags:
   - django
   - bootstrap
   - three.js
+  - jquery
+  - mysql
+  - css
+  - scss
+  - pylint
+  - webpack
+  - apache
+  - passenger
 ---
 
 Event website built on Django, with information about the conference speakers,
