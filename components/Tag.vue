@@ -1,13 +1,29 @@
 <script setup lang="ts">
 import { initTooltips } from 'flowbite'
+import { computed } from 'vue'
 
-const props = defineProps(['tag'])
+const props = defineProps(['tag', 'type'])
 
 const { data } = useAsyncData(`tag:${props.tag}`, () => {
   return queryContent(`/tags/skills/${props.tag}`).findOne()
 })
 
+const typeStyles = computed(() => {
+  if (!props.type || props.type === 'primary') {
+    return 'bg-purple-900 text-white border-transparent hover:bg-transparent hover:text-purple-900 hover:border-purple-900'
+  } else if (props.type === 'outline') {
+    return 'bg-transparent text-purple-900 border-purple-900 hover:bg-purple-900 hover:text-white hover:border-transparent'
+  }
+  return ''
+})
+
 onMounted(initTooltips)
+</script>
+
+<script lang="ts">
+export default {
+  inheritAttrs: false,
+}
 </script>
 
 <template>
@@ -15,10 +31,11 @@ onMounted(initTooltips)
     :data-tooltip-target="data && `tag-${$.uid}-tooltip`"
     href=""
     :class="`
-      inline-block px-2 bg-purple-900 border border-transparent
-      text-sm font-bold text-white rounded-full transition
-      hover:bg-transparent hover:text-purple-900 hover:border-purple-900
-      `">
+      inline-block px-2
+      text-sm font-bold rounded-full transition border
+      ${typeStyles}
+      `"
+    v-bind="$attrs">
     {{ tag }}
   </a>
   <template v-if="data">
