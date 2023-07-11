@@ -17,6 +17,11 @@ tags:
   - composer
   - bash
   - shmmy
+links:
+  - title: Website
+    url: https://shmmy.ntua.gr/odigos/
+  - title: Repository
+    url: https://lib.ece.ntua.gr/git/shmmy/odigos/
 ---
 
 Web app that renders the wiki page of a student-written freshers' guide in a

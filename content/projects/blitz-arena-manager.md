@@ -16,6 +16,11 @@ tags:
   - vite
   - vuex
   - webpack
+links:
+  - title: Demo
+    upon_request: true
+  - title: Source code
+    upon_request: true
 ---
 
 A full-stack web application designed for conducting over-the-board blitz chess

@@ -17,6 +17,11 @@ tags:
   - pjax
   - webpack
   - apache
+links:
+  - title: Website
+    url: https://2018.tedxntua.com
+  - title: Repository
+    url: https://github.com/TEDxNTUA/tedxntua2018
 ---
 
 Event website built on Laravel, with information about the conference speakers,

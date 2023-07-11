@@ -10,6 +10,11 @@ tags:
   - jekyll
   - jquery
   - js
+links:
+  - title: Website
+    url: https://kallinikos.github.io/
+  - title: Repository
+    url: https://github.com/kallinikos/kallinikos.github.io/
 ---
 
 Custom Jekyll responsive theme for Kallinikos, a crowd-sourced algorithms wiki.

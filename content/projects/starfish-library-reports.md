@@ -13,6 +13,11 @@ tags:
   - vite
   - github-actions
   - indexeddb
+links:
+  - title: Website
+    url: https://starfishfoundation.github.io/library-weekly-reports/
+  - title: Repository
+    url: https://github.com/starfishfoundation/library-weekly-reports/
 ---
 
 Client-side web app for generating spreadsheet reports for a library system.

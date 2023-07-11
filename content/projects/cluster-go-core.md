@@ -18,6 +18,11 @@ tags:
   - docker
   - bash
   - cluster
+links:
+  - title: Product website
+    url: https://cluster.gr/go-core-galaxy/
+  - title: Source code
+    upon_request: true
 ---
 
 Enterprise plugin for WooCommerce stores that synchronizes their product

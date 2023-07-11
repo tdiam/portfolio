@@ -13,6 +13,11 @@ tags:
   - css
   - apollo
   - shmmy
+links:
+  - title: Demo
+    upon_request: true
+  - title: Source code
+    upon_request: true
 ---
 
 Web app displayed at a university monitor with live info about upcoming classes,

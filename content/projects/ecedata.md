@@ -16,6 +16,11 @@ tags:
   - selenium
   - camelot
   - shmmy
+links:
+  - title: Website (GraphQL explorer)
+    url: https://shmmy.ntua.gr/ecedata/graphql
+  - title: Repository
+    url: https://lib.ece.ntua.gr/git/shmmy/ecedata
 ---
 
 Python project that scrapes data from the website and documents of my university,

@@ -17,6 +17,11 @@ tags:
   - docker
   - bash
   - cluster
+links:
+  - title: Product website
+    url: https://cluster.gr/woocommerce-skroutz-smart-cart/
+  - title: Source code
+    upon_request: true
 ---
 
 WooCommerce plugin that syncs sales data from Skroutz.gr, a Greek marketplace,

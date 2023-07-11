@@ -10,6 +10,9 @@ tags:
   - mediawiki
   - cli
   - shmmy
+links:
+  - title: Source code
+    upon_request: true
 ---
 
 Python script for updating student-run university wiki with courses and exams

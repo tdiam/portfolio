@@ -12,6 +12,11 @@ tags:
   - ajax
   - js
   - json
+links:
+  - title: Demo
+    upon_request: true
+  - title: Source code
+    upon_request: true
 ---
 
 Facilitates over-the-board games by broadcasting the moves live to the

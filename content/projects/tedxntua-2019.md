@@ -18,6 +18,11 @@ tags:
   - webpack
   - apache
   - passenger
+links:
+  - title: Website
+    url: https://2019.tedxntua.com
+  - title: Repository
+    url: https://github.com/TEDxNTUA/tedxntua2019
 ---
 
 Event website built on Django, with information about the conference speakers,

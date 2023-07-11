@@ -7,6 +7,9 @@ image: /projects/hop.png
 tags:
   - bash
   - cli
+links:
+  - title: Repository
+    url: https://github.com/tdiam/hop/
 ---
 
 Simple Bash utility for navigating quickly to pre-configured directories.

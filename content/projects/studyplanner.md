@@ -12,6 +12,11 @@ tags:
   - parcel
   - apollo
   - shmmy
+links:
+  - title: Website
+    url: https://shmmy.ntua.gr/studyplanner
+  - title: Repository
+    url: https://lib.ece.ntua.gr/git/shmmy/studyplanner/
 ---
 
 Tool for university students to view class schedules, select courses to attend,

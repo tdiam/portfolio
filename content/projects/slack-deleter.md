@@ -8,6 +8,9 @@ tags:
   - python
   - cli
   - poetry
+links:
+  - title: Repository
+    url: https://github.com/tdiam/slack-deleter/
 ---
 
 CLI tool to bulk delete messages from a Slack workspace.
