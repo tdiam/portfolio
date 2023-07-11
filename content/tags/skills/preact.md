@@ -2,4 +2,6 @@
 level: Advanced
 ---
 
-Vue is a JS framework.
+Preact is a fast alternative to React with the same modern API.
+
+[Website](https://preactjs.com/)

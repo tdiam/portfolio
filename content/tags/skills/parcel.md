@@ -2,4 +2,6 @@
 level: Familiar
 ---
 
-Vue is a JS framework.
+Parcel is a lightweight, zero-configuration bundler for web applications, designed to simplify the development workflow and improve performance.
+
+[Website](https://parceljs.org/)

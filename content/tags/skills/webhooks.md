@@ -2,4 +2,4 @@
 level: Advanced
 ---
 
-Vue is a JS framework.
+Webhooks are user-defined HTTP callbacks typically triggered by some event, used to allow services to communicate with each other automatically.

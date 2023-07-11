@@ -2,4 +2,6 @@
 level: Senior
 ---
 
-Vue is a JS framework.
+Python is a versatile programming language widely used for web development, data analysis, artificial intelligence, and automation.
+
+[Website](https://python.org/)

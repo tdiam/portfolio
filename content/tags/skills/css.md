@@ -2,4 +2,4 @@
 level: Senior
 ---
 
-Vue is a JS framework.
+CSS is a stylesheet language used to define the look and formatting of a document written in HTML.
