@@ -27,7 +27,15 @@
       <ul class="flex flex-row flex-wrap justify-center text-lg">
         <li v-for="(link, idx) in doc.links" class="mr-2 mb-1">
           <span v-if="idx > 0" class="mr-2" aria-hidden="true">&bull;</span>
-          <ProseA :href="link.url">{{ link.title }}</ProseA>
+          <template v-if="link.upon_request">
+            <ProseA href="mailto:diamaltho@gmail.com">
+              {{ link.title }}
+              (available upon request)
+            </ProseA>
+          </template>
+          <template v-else>
+            <ProseA :href="link.url">{{ link.title }}</ProseA>
+          </template>
         </li>
       </ul>
     </template>
