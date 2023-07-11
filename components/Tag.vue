@@ -2,7 +2,7 @@
 import { initTooltips } from 'flowbite'
 import { computed } from 'vue'
 
-const props = defineProps(['tag', 'type'])
+const props = defineProps(['tag', 'type', 'count'])
 
 const normalizedTag = computed(() => props.tag.toLowerCase().replace(/\s/g, '-'))
 
@@ -31,7 +31,7 @@ export default {
 <template>
   <a
     :data-tooltip-target="data && `tag-${$.uid}-tooltip`"
-    href=""
+    :href="`/projects/tag/${normalizedTag}`"
     :class="`
       inline-block px-2
       text-sm font-bold rounded-full transition border
@@ -39,6 +39,9 @@ export default {
       `"
     v-bind="$attrs">
     {{ tag }}
+    <span v-if="typeof count !== 'undefined'" class="font-normal">
+      &times; {{ count }}
+    </span>
   </a>
   <template v-if="data">
     <div

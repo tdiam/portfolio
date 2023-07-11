@@ -3,7 +3,7 @@ import { computed } from 'vue'
 
 const route = useRoute()
 const isShowBackdrop = computed(() => {
-  return route.path === '/' || route.path.match(/^\/projects\/./)
+  return route.path === '/' || route.path.match(/^\/projects\/(?!tag\/)./)
 })
 </script>
 
