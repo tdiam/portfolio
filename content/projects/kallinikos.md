@@ -9,6 +9,7 @@ tags:
   - css
   - jekyll
   - jquery
+  - js
 ---
 
 Custom Jekyll responsive theme for Kallinikos, a crowd-sourced algorithms wiki.

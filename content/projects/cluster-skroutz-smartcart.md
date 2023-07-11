@@ -10,6 +10,7 @@ tags:
   - woocommerce
   - webhooks
   - jquery
+  - js
   - ajax
   - css
   - gitlab

@@ -13,6 +13,7 @@ tags:
   - twig
   - css
   - scss
+  - js
   - pjax
   - webpack
   - apache

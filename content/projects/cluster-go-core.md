@@ -10,6 +10,7 @@ tags:
   - woocommerce
   - erp
   - jquery
+  - js
   - bootstrap
   - css
   - drupal

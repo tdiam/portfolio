@@ -13,6 +13,7 @@ tags:
   - mysql
   - css
   - scss
+  - js
   - pylint
   - webpack
   - apache

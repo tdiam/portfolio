@@ -10,6 +10,7 @@ tags:
   - jquery
   - bootstrap
   - ajax
+  - js
   - json
 ---
 
