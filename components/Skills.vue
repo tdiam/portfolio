@@ -1,19 +1,26 @@
 <script setup lang="ts">
-const { data } = await useAsyncData('skills', async () => {
+const { data: skills } = await useAsyncData('skills', async () => {
   return queryContent('/tags/skills/').find()
 })
 
+const tagCounts = await useTagsWithCount()
+
 const skillsByLevel = computed(() => {
-  const res = {
+  const res: {[level: string]: any[]} = {
     'Senior': [],
     'Advanced': [],
     'Familiar': [],
   }
 
-  for (const tag of unref(data) || []) {
+  for (const tag of unref(skills) || []) {
     if (res.hasOwnProperty(tag.level)) {
+      tag.name = tag._path?.split('/').pop()
       res[tag.level].push(tag)
     }
+  }
+
+  for (const level of Object.keys(res)) {
+    res[level].sort((a, b) => tagCounts[b.name] - tagCounts[a.name])
   }
 
   return res
@@ -31,8 +38,8 @@ const skillsByLevel = computed(() => {
       {{ level }}
     </h4>
     <ul class="mt-1 flex flex-row flex-wrap">
-      <li v-for="tag in tags" class="mr-2">
-        <Tag :tag="tag._path.split('/').pop()" />
+      <li v-for="tag in tags" class="mr-2 mb-1">
+        <Tag :tag="tag.name" />
       </li>
     </ul>
   </div>
