@@ -5,7 +5,7 @@ defineProps(['project'])
 <template>
   <div class="flex flex-col rounded-lg shadow-lg bg-white">
     <NuxtLink :to="project._path">
-      <img v-if="project.image" :src="project.image" class="rounded-t-lg" />
+      <img v-if="project.image" :src="project.image" class="rounded-t-lg shadow-inner" />
     </NuxtLink>
     <div class="p-6">
       <ul class="flex flex-row flex-wrap">
