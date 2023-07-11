@@ -4,30 +4,14 @@ import { ref, computed } from 'vue'
 
 const TAG_LIMIT = 10
 
-const projectTags = await queryContent('projects').only('tags').find()
-
-const tags: {[tag: string]: number} = {}
-for (const p of projectTags) {
-  for (const t of p.tags) {
-    if (!tags.hasOwnProperty(t)) {
-      tags[t] = 0
-    }
-    ++tags[t]
-  }
-}
-
-// primary sort: count
-// secondary sort: name
-const countedTags = [...Object.entries(tags)]
-countedTags.sort(([aTag, aCount], [bTag, bCount]) => aTag.localeCompare(bTag))
-countedTags.sort(([aTag, aCount], [bTag, bCount]) => bCount - aCount)
+const tags = await useSortedTagsWithCount()
 
 const isShowAllTags = ref(false)
 const visibleTags = computed(() => {
   if (isShowAllTags.value) {
-    return countedTags
+    return tags
   } else {
-    return countedTags.slice(0, TAG_LIMIT)
+    return tags.slice(0, TAG_LIMIT)
   }
 })
 </script>
@@ -37,7 +21,7 @@ const visibleTags = computed(() => {
     <li v-for="([tag, count]) in visibleTags" class="mr-2 mb-2">
       <Tag :tag="tag" :count="count" />
     </li>
-    <li v-if="!isShowAllTags && countedTags.length > TAG_LIMIT">
+    <li v-if="!isShowAllTags && tags.length > TAG_LIMIT">
       <button
         :class="`
           inline-block px-2
@@ -46,7 +30,7 @@ const visibleTags = computed(() => {
           hover:text-white hover:border-transparent
           `"
         @click="() => isShowAllTags = true">
-        + {{ countedTags.length - TAG_LIMIT }} more tags
+        + {{ tags.length - TAG_LIMIT }} more tags
       </button>
     </li>
   </ul>
