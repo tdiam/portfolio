@@ -4,8 +4,10 @@ import { computed } from 'vue'
 
 const props = defineProps(['tag', 'type'])
 
-const { data } = useAsyncData(`tag:${props.tag}`, () => {
-  return queryContent(`/tags/skills/${props.tag}`).findOne()
+const normalizedTag = computed(() => props.tag.toLowerCase().replace(/\s/g, '-'))
+
+const { data } = useAsyncData(`tag:${normalizedTag}`, () => {
+  return queryContent(`/tags/skills/${normalizedTag}`).findOne()
 })
 
 const typeStyles = computed(() => {
