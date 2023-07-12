@@ -6,8 +6,8 @@ const props = defineProps(['tag', 'type', 'count'])
 
 const normalizedTag = computed(() => props.tag.toLowerCase().replace(/\s/g, '-'))
 
-const { data } = useAsyncData(`tag:${normalizedTag}`, () => {
-  return queryContent(`/tags/skills/${normalizedTag}`).findOne()
+const { data } = useAsyncData(`tag:${normalizedTag.value}`, () => {
+  return queryContent(`/tags/skills/${normalizedTag.value}`).findOne()
 })
 
 const typeStyles = computed(() => {
