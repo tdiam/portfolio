@@ -3,6 +3,11 @@ import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
 
 const route = useRoute()
 const tagFilter = route.params.tag
+
+useHead({
+  title: `Projects with ${tagFilter}`,
+})
+
 const projectsQuery: QueryBuilderParams = {
   path: '/projects',
   where: [

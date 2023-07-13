@@ -1,4 +1,8 @@
 <script setup lang="ts">
+useHead({
+  title: 'About',
+})
+
 const aboutTabs = {
   experience: {
     title: 'Experience',

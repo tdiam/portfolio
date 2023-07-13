@@ -1,6 +1,13 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 
+useHead({
+  titleTemplate: title => {
+    const base = 'Theodoros Diamantidis | Web & Software Engineer'
+    return title ? `${title} | ${base}` : base
+  },
+})
+
 const route = useRoute()
 const isShowBackdrop = computed(() => {
   return route.path === '/' || route.path.match(/^\/projects\/(?!tag\/)./)

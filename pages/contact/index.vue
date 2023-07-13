@@ -1,3 +1,9 @@
+<script setup lang="ts">
+useHead({
+  title: 'Contact',
+})
+</script>
+
 <template>
   <div class="leading-loose text-xl text-center">
     <h2 class="text-2xl tracking-wider font-semibold text-slate-800">
