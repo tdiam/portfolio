@@ -1,4 +1,6 @@
 <script setup>
+import AvatarImg from '~/assets/img/avatar.svg?component'
+
 const menu = useMenu()
 </script>
 
@@ -6,6 +8,19 @@ const menu = useMenu()
   <nav class="container flex flex-wrap items-center justify-between md:py-12">
     <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
       <ul class="flex flex-col mt-4 md:flex-row md:space-x-12 md:mt-0 md:font-semibold">
+        <li>
+          <NuxtLink to="/">
+            <tippy theme="light-border" placement="bottom-start" :offset="[0, 20]">
+              <AvatarImg class="w-auto h-8 -mt-1 drop-shadow" viewBox="0 0 264 280" />
+              <template #content>
+                <div class="p-2 text-lg">
+                  <h4 class="font-semibold">Theodoros Diamantidis</h4>
+                  <p>Web & Software Engineer</p>
+                </div>
+              </template>
+            </tippy>
+          </NuxtLink>
+        </li>
         <li v-for="item in menu">
           <NuxtLink
             :to="item.path"

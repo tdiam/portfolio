@@ -27,7 +27,12 @@ export default {
 
 <template>
   <template v-if="data">
-    <tippy theme="light-border" interactive animation="shift-away" :duration="[300, 50]">
+    <tippy
+      theme="light-border"
+      interactive
+      animation="shift-away"
+      :duration="[300, 50]"
+      :offset="[0, 15]">
       <a
         :href="`/projects/tag/${normalizedTag}`"
         :class="`
