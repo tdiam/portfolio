@@ -39,7 +39,7 @@ const projectsQuery: QueryBuilderParams = {
         <NuxtLink
           to="/projects"
           :class="`
-            rounded border border-black bg-transparent
+            rounded border border-purple-900 bg-transparent
             px-4 py-1 text-lg font-semibold text-purple-900 uppercase transition
             hover:bg-purple-900 hover:border-transparent hover:text-white
           `">
