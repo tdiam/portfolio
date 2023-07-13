@@ -26,30 +26,41 @@ export default {
 </script>
 
 <template>
-  <a
-    :data-tooltip-target="data && `tag-${$.uid}-tooltip`"
-    :href="`/projects/tag/${normalizedTag}`"
-    :class="`
-      inline-block px-2
-      text-sm font-bold rounded-full transition border
-      ${typeStyles}
-      `"
-    v-bind="$attrs">
-    {{ tag }}
-    <span v-if="typeof count !== 'undefined'" class="font-normal">
-      &times; {{ count }}
-    </span>
-  </a>
   <template v-if="data">
-    <div
-      role="tooltip"
-      :id="`tag-${$.uid}-tooltip`"
+    <tippy theme="light-border" interactive animation="shift-away" :duration="[300, 50]">
+      <a
+        :href="`/projects/tag/${normalizedTag}`"
+        :class="`
+          inline-block px-2
+          text-sm font-bold rounded-full transition border
+          ${typeStyles}
+          `"
+        v-bind="$attrs">
+        {{ tag }}
+        <span v-if="typeof count !== 'undefined'" class="font-normal">
+          &times; {{ count }}
+        </span>
+      </a>
+      <template #content>
+        <div class="p-2">
+          <ContentRenderer :value="data" class="prose prose-sm prose-p:font-medium" />
+        </div>
+      </template>
+    </tippy>
+  </template>
+  <template v-else>
+    <a
+      :href="`/projects/tag/${normalizedTag}`"
       :class="`
-        absolute z-10 inline-block px-4 py-2
-        bg-white shadow rounded invisible opacity-0
-        transition-opacity duration-300 tooltip
-      `">
-      <ContentRenderer :value="data" class="prose prose-sm prose-p:font-medium" />
-    </div>
+        inline-block px-2
+        text-sm font-bold rounded-full transition border
+        ${typeStyles}
+        `"
+      v-bind="$attrs">
+      {{ tag }}
+      <span v-if="typeof count !== 'undefined'" class="font-normal">
+        &times; {{ count }}
+      </span>
+    </a>
   </template>
 </template>

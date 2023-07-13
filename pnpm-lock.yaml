@@ -1,6 +1,9 @@
 lockfileVersion: '6.0'
 
 dependencies:
+  vue-tippy:
+    specifier: v6
+    version: 6.2.0(vue@3.3.4)
 
 devDependencies:
   '@nuxt/content':
@@ -6258,6 +6261,12 @@ packages:
     resolution: {integrity: sha512-AD5ih2NlSssTCwsMznbvwMZpJ1cbhkGd2uueNxzv2jDlEeZdU04JQfRnggJQ8DrcVBGjAsCKwFBbDlVNtEMlzw==}
     dev: true
 
+  /tippy.js@6.3.7:
+    resolution: {integrity: sha512-E1d3oP2emgJ9dRQZdf3Kkn0qJgI6ZLpyS5z6ZkY1DF3kaQaBsGZsndEpHwx+eC+tYM41HaSNvNtLx8tU57FzTQ==}
+    dependencies:
+      '@popperjs/core': 2.11.8
+    dev: false
+
   /tmp@0.0.33:
     resolution: {integrity: sha512-jRCJlojKnZ3addtTOjdIqoRuPEKBvNXcGYqzO6zWZX8KfKEpnGY5jfggJQ3EjKuu8D4bJRr0y+cYJFmYbImXGw==}
     engines: {node: '>=0.6.0'}
@@ -6777,6 +6786,15 @@ packages:
       '@vue/devtools-api': 6.5.0
       vue: 3.3.4
     dev: true
+
+  /vue-tippy@6.2.0(vue@3.3.4):
+    resolution: {integrity: sha512-UytUItp2ZDLXUwAotmioz02uLQoaAl5iVM+5yKsQWrXr29L9ivavtkL684FqbmOfbeCypBw+rVKsXhwdnCt/Cg==}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      tippy.js: 6.3.7
+      vue: 3.3.4
+    dev: false
 
   /vue@3.3.4:
     resolution: {integrity: sha512-VTyEYn3yvIeY1Py0WaYGZsXnz3y5UnGi62GjVEqvEGPl6nxbOrCXbVOTQWBEJUqAyTUk2uJ5JLVnYJ6ZzGbrSw==}

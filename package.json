@@ -16,5 +16,6 @@
     "vite-svg-loader": "^4.0.0"
   },
   "dependencies": {
+    "vue-tippy": "v6"
   }
 }
