@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { initTooltips } from 'flowbite'
 import { computed } from 'vue'
 
 const props = defineProps(['tag', 'type', 'count'])
@@ -18,8 +17,6 @@ const typeStyles = computed(() => {
   }
   return ''
 })
-
-onMounted(initTooltips)
 </script>
 
 <script lang="ts">
