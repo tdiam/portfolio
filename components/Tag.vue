@@ -31,6 +31,7 @@ export default {
       theme="light-border"
       interactive
       animation="shift-away"
+      trigger="mouseenter focusin"
       :duration="[300, 50]"
       :offset="[0, 15]">
       <a
