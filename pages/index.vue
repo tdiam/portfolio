@@ -83,7 +83,7 @@ function setAboutTab(tab: string) {
           :class="`
             py-2 text-lg font-semibold text-slate-700 hover:text-black
           `">
-          VIEW ALL PROJECTS &raquo;
+          VIEW ALL PROJECTS <span aria-hidden="true">&raquo;</span>
         </NuxtLink>
       </div>
     </ContentList>
@@ -124,6 +124,13 @@ function setAboutTab(tab: string) {
           <div v-show="aboutTab === 'awards'">
             <AboutAwards :limit="3" />
           </div>
+          <NuxtLink
+            to="/about"
+            :class="`
+              block ml-10 text-lg font-semibold text-slate-700 hover:text-black
+            `">
+            READ MORE <span aria-hidden="true">&raquo;</span>
+          </NuxtLink>
         </div>
       </div>
       <div>
