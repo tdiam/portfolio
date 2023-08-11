@@ -70,7 +70,7 @@ const projectsQuery: QueryBuilderParams = {
     <h3 class="mt-24 mb-6 text-2xl tracking-wider font-bold text-slate-800">
       About me
     </h3>
-    <div class="grid grid-cols-[minmax(0,2fr),minmax(0,1fr)] gap-x-8 gap-y-16 justify-between items-start">
+    <div class="md:mt-16 grid md:grid-cols-[minmax(0,2fr),minmax(0,1fr)] gap-x-8 gap-y-12 md:gap-y-16 justify-between items-start">
       <AboutIntro />
       <AboutProfiles />
       <AboutTimelines :limit="3" />

@@ -25,7 +25,7 @@ useHead({
       </NuxtLink>
     </div>
     <div class="mt-12 md:mt-16 grid md:grid-cols-[minmax(0,2fr),minmax(0,1fr)] gap-x-8 gap-y-16 justify-between items-start">
-      <AboutIntro />
+      <AboutIntro class="container max-w-xs mx-auto text-center md:max-w-none md:mx-0 md:text-left"/>
       <AboutProfiles />
       <AboutTimelines />
       <Skills />
