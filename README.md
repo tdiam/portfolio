@@ -9,7 +9,8 @@ A showcase of projects I've built or worked on as a software engineer.
 
 ## About this project
 
-Built on [Vue](https://vuejs.org) + [Nuxt](https://nuxt.com), content is stored as Markdown files with the help of [Nuxt Content](https://content.nuxtjs.org).
+* Built on [Vue](https://vuejs.org) + [Nuxt](https://nuxt.com).
+* Content is stored as Markdown files with the help of [Nuxt Content](https://content.nuxtjs.org).
 
 ## License
 
