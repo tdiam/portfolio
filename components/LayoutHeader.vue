@@ -5,10 +5,14 @@ const menu = useMenu()
 </script>
 
 <template>
-  <nav class="container flex flex-wrap items-center justify-between md:py-12">
-    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-      <ul class="flex flex-col mt-4 md:flex-row md:space-x-12 md:mt-0 md:font-semibold">
-        <li>
+  <nav
+    :class="`
+      fixed bottom-0 z-30 bg-white md:static md:bg-transparent
+      container flex flex-wrap items-center justify-between md:py-12
+    `">
+    <div class="items-center justify-between w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+      <ul class="grid grid-flow-col md:flex md:flex-row md:space-x-12 md:mt-0 md:font-semibold">
+        <li class="hidden md:block">
           <NuxtLink to="/">
             <tippy theme="light-border" placement="bottom-start" :offset="[0, 20]">
               <AvatarImg class="w-auto h-8 -mt-1 drop-shadow" viewBox="0 0 264 280" />
@@ -25,11 +29,17 @@ const menu = useMenu()
           <NuxtLink
             :to="item.path"
             :class="`
-              block py-2 pl-3 pr-4 md:p-0 border-purple-900
-              hover:text-purple-900 hover:border-b-4
-              ${item.active ? 'text-purple-900 border-b-4' : 'text-slate-800'}
+              block pt-2 pb-1 md:p-0 text-center text-xs md:text-base
+              border-purple-900 hover:text-purple-900 hover:border-b-2 hover:md:border-b-4
+              ${item.active ? 'text-purple-900 border-b-2 md:border-b-4' : 'text-slate-800'}
             `"
             :aria-current="item.active ? 'page' : false">
+            <div class="block md:hidden">
+              <Icon
+                :name="item.iconName"
+                class="mb-1 text-xl"
+                />
+            </div>
             {{ item.title.toUpperCase() }}
           </NuxtLink>
         </li>
@@ -38,7 +48,7 @@ const menu = useMenu()
     <NuxtLink
       to="/projects"
       :class="`
-        ml-auto md:order-2 rounded border border-slate-700 -mt-2 px-4 py-1
+        hidden md:block ml-auto order-2 rounded border border-slate-700 -mt-2 px-4 py-1
         font-semibold text-slate-700 uppercase transition
         hover:border-black hover:ring-1 hover:ring-black hover:ring-inset hover:text-black
       `">

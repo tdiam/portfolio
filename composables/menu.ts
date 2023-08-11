@@ -6,16 +6,19 @@ export const useMenu = () => {
       title: 'Home',
       path: '/',
       active: route.path === '/',
+      iconName: 'carbon:grid',
     },
     {
       title: 'About',
       path: '/about',
       active: route.path === '/about',
+      iconName: 'solar:info-circle-outline',
     },
     {
       title: 'Work',
       path: '/projects',
       active: route.path.startsWith('/projects'),
+      iconName: 'ph:briefcase-simple',
     },
     // {
     //   title: 'Side quests',
@@ -26,6 +29,7 @@ export const useMenu = () => {
       title: 'Contact',
       path: '/contact',
       active: route.path === '/contact',
+      iconName: 'carbon:email',
     },
   ])
 }

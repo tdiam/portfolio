@@ -15,14 +15,19 @@ const isShowBackdrop = computed(() => {
 </script>
 
 <template>
-  <div :class="`min-h-screen ${isShowBackdrop ? 'bg-slate-50' : 'bg-slate-100'}`">
+  <div
+    :class="`
+      min-h-screen pb-[calc(3.25rem+2px)] md:pb-0
+      ${isShowBackdrop ? 'bg-slate-50' : 'bg-slate-100'}
+    `"
+    >
     <div
       v-if="isShowBackdrop"
       class="absolute bg-[hsl(268,80%,95.5%)] w-full h-[70vh]">
     </div>
     <div class="relative z-10 max-w-5xl mx-auto min-h-[70vh]">
       <LayoutHeader />
-      <main class="py-20">
+      <main class="px-3 py-10 md:px-0 md:py-20">
         <NuxtPage />
       </main>
     </div>
