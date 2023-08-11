@@ -57,7 +57,7 @@ const projectsQuery: QueryBuilderParams = {
           :key="project._path"
           :project="project" />
       </div>
-      <div class="flex justify-end mt-4">
+      <div class="flex justify-center md:justify-end mt-4">
         <NuxtLink
           to="/projects"
           :class="`
