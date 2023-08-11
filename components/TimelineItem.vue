@@ -5,7 +5,7 @@ defineProps(['data'])
 <template>
   <div class="relative -ml-[.6rem] py-2">
     <Icon name="ic:baseline-circle" class="absolute my-2 text-slate-700" />
-    <div class="pl-8">
+    <div class="pl-8 pr-2">
       <header class="flex flex-wrap items-center">
         <span class="w-full md:w-auto text-lg md:text-xl font-bold text-slate-800">
           <template v-if="data.dateStart || data.dateEnd">
