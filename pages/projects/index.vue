@@ -12,7 +12,7 @@ const projectsQuery: QueryBuilderParams = {
 
 <template>
   <div>
-    <h1 class="text-center text-3xl font-bold tracking-wider">
+    <h1 class="text-center text-2xl md:text-3xl font-bold tracking-wider">
       Projects
     </h1>
     <AllTags />

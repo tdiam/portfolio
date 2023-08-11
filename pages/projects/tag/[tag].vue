@@ -22,7 +22,7 @@ const projectsQuery: QueryBuilderParams = {
 
 <template>
   <div>
-    <h1 class="text-center text-3xl font-bold tracking-wider">
+    <h1 class="text-center text-2xl md:text-3xl font-bold tracking-wider">
       Projects with tag
     </h1>
     <div class="mt-2 flex justify-center">
@@ -30,7 +30,7 @@ const projectsQuery: QueryBuilderParams = {
     </div>
     <ContentList :query="projectsQuery">
       <template #default="{ list }">
-        <div class="grid grid-cols-3 gap-4 mt-12 justify-between">
+        <div class="grid md:grid-cols-3 gap-4 mt-8 md:mt-16 justify-between">
           <ProjectItem
             v-for="project in list"
             :key="project._path"
@@ -46,7 +46,7 @@ const projectsQuery: QueryBuilderParams = {
             to="/projects"
             :class="`
               rounded border border-purple-900 bg-transparent
-              px-4 py-1 text-lg font-semibold text-purple-900 uppercase transition
+              px-4 py-1 md:text-lg font-semibold text-purple-900 uppercase transition
               hover:bg-purple-900 hover:border-transparent hover:text-white
             `">
             Browse all projects
