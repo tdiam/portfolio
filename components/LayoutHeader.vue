@@ -1,6 +1,4 @@
 <script setup>
-import AvatarImg from '~/assets/img/avatar.svg?component'
-
 const menu = useMenu()
 </script>
 
@@ -15,7 +13,7 @@ const menu = useMenu()
         <li class="hidden md:block">
           <NuxtLink to="/">
             <tippy theme="light-border" placement="bottom-start" :offset="[0, 20]">
-              <AvatarImg class="w-auto h-8 -mt-1 drop-shadow" viewBox="0 0 264 280" />
+              <AvatarImg class="w-8 -mt-1 drop-shadow" />
               <template #content>
                 <div class="p-2 text-lg">
                   <h4 class="font-semibold">Theodoros Diamantidis</h4>

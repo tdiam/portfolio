@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import AvatarImg from '~/assets/img/avatar.svg?component'
 import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
 
 const projectsQuery: QueryBuilderParams = {
@@ -21,8 +20,8 @@ const projectsQuery: QueryBuilderParams = {
         `">
           Web & Software Engineer
         </h1>
-        <div class="md:hidden mt-4 text-left">
-          <AvatarImg />
+        <div class="md:hidden mt-4">
+          <AvatarImg class="w-56 mx-auto drop-shadow-[0_12px_16px_hsla(244,100%,13%,.3)]" />
         </div>
         <p class="mt-12 md:mt-5 text-sm md:text-lg font-medium text-slate-700">
           I build elaborate applications for the modern world.
@@ -48,9 +47,8 @@ const projectsQuery: QueryBuilderParams = {
           </NuxtLink>
         </div>
       </div>
-      <div>
-        <AvatarImg
-          class="md:block drop-shadow-[0_24px_32px_hsla(244,100%,13%,.3)]" />
+      <div class="hidden md:block">
+        <AvatarImg class="drop-shadow-[0_24px_32px_hsla(244,100%,13%,.3)]" />
       </div>
     </div>
     <ContentList :query="projectsQuery" v-slot="{ list }">
