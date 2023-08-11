@@ -5,7 +5,11 @@ useHead({
 </script>
 
 <template>
-  <div class="leading-loose text-xl text-center">
+  <div :class="`
+      w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+      md:static md:transform-none
+      leading-loose text-xl text-center
+    `">
     <h2 class="text-2xl tracking-wider font-semibold text-slate-800">
       Theodoros Diamantidis
     </h2>
