@@ -11,7 +11,7 @@ const menu = useMenu()
       container flex flex-wrap items-center justify-between md:py-12
     `">
     <div class="items-center justify-between w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-      <ul class="grid grid-flow-col md:flex md:flex-row md:space-x-12 md:mt-0 md:font-semibold">
+      <ul class="grid grid-flow-col font-semibold md:flex md:flex-row md:space-x-12 md:mt-0">
         <li class="hidden md:block">
           <NuxtLink to="/">
             <tippy theme="light-border" placement="bottom-start" :offset="[0, 20]">
