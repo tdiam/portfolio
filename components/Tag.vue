@@ -37,8 +37,8 @@ export default {
       <a
         :href="`/projects/tag/${normalizedTag}`"
         :class="`
-          inline-block px-2
-          text-sm font-bold rounded-full transition border
+          inline-block px-2 py-0.5 md:py-0
+          text-xs md:text-sm font-bold rounded-full transition border
           ${typeStyles}
           `"
         v-bind="$attrs">
@@ -58,8 +58,8 @@ export default {
     <a
       :href="`/projects/tag/${normalizedTag}`"
       :class="`
-        inline-block px-2
-        text-sm font-bold rounded-full transition border
+        inline-block px-2 py-0.5 md:py-0
+        text-xs md:text-sm font-bold rounded-full transition border
         ${typeStyles}
         `"
       v-bind="$attrs">

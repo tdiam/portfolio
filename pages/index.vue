@@ -71,7 +71,7 @@ function setAboutTab(tab: string) {
       </div>
     </div>
     <ContentList :query="projectsQuery" v-slot="{ list }">
-      <div class="grid grid-cols-3 gap-4 mt-20 items-start justify-between">
+      <div class="grid md:grid-cols-3 gap-4 mt-20 items-start justify-between">
         <ProjectItem
           v-for="project in list"
           :key="project._path"
