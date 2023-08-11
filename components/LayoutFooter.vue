@@ -12,7 +12,7 @@ const menu = useMenu()
         <a
           href="mailto:diamaltho@gmail.com"
           :class="`
-            text-3xl md:text-6xl font-bold tracking-wide
+            text-2xl md:text-6xl font-bold tracking-wide
             hover:border-b-4 hover:border-white
           `">
           diamaltho@gmail.com
