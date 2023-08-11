@@ -20,7 +20,7 @@ const TAG_LIMIT = 5
           {{ project.title }}
         </NuxtLink>
       </h4>
-      <ContentRenderer :value="project" :excerpt="true" class="mt-3 prose-sm md:prose-base" />
+      <ContentRenderer :value="project" :excerpt="true" class="mt-3 max-sm:prose-sm" />
     </div>
   </div>
 </template>
