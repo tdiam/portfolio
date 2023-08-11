@@ -4,8 +4,8 @@
 
 A showcase of projects I've built or worked on as a software engineer.
 
-### [View website](https://tdiam.me/portfolio)
-[Projects](https://tdiam.me/portfolio/projects) · [Résumé](https://tdiam.me/portfolio/about) · [Get in touch](https://tdiam.me/portfolio/contact)
+### [💼 View website](https://portfolio.tdiam.me)
+[Projects](https://portfolio.tdiam.me/projects) · [Résumé](https://portfolio.tdiam.me/about) · [Get in touch](https://portfolio.tdiam.me/contact)
 
 ## About this project
 
