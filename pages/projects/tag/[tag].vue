@@ -8,6 +8,10 @@ useHead({
   title: `Projects with ${tagFilter}`,
 })
 
+const { data: tagData } = useAsyncData(`tag:${tagFilter}`, () => {
+  return queryContent(`/tags/skills/${tagFilter}`).findOne()
+})
+
 const projectsQuery: QueryBuilderParams = {
   path: '/projects',
   where: [
@@ -27,6 +31,14 @@ const projectsQuery: QueryBuilderParams = {
     </h1>
     <div class="mt-2 flex justify-center">
       <Tag :tag="tagFilter" />
+    </div>
+    <div class="mt-8 flex justify-center" v-if="tagData">
+      <ContentRenderer
+        :value="tagData"
+        :class="`
+          p-4 rounded-lg shadow bg-white text-center
+          prose prose-sm md:prose-base prose-p:font-medium
+        `" />
     </div>
     <ContentList :query="projectsQuery">
       <template #default="{ list }">
