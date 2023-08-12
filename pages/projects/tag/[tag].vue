@@ -30,7 +30,7 @@ const projectsQuery: QueryBuilderParams = {
       Projects with tag
     </h1>
     <div class="mt-2 flex justify-center">
-      <Tag :tag="tagFilter" />
+      <Tag :tag="tagFilter" :data="tagData" />
     </div>
     <div class="mt-8 flex justify-center" v-if="tagData">
       <ContentRenderer
