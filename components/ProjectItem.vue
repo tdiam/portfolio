@@ -11,6 +11,7 @@ const TAG_LIMIT = 5
         v-if="project.image"
         :src="project.image"
         loading="lazy"
+        sizes="sm:100vw 2xl:33vw"
         class="rounded-t-lg shadow-inner" />
     </NuxtLink>
     <div class="pt-3 pb-5 px-5 md:p-6">

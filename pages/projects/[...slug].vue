@@ -19,6 +19,7 @@
         v-if="doc.image"
         :src="doc.image"
         loading="lazy"
+        sizes="md:100vw lg:1600px"
         :class="`
           project-image w-full md:w-[80%]
           mt-20 md:mt-12 mx-auto shadow-xl shadow-slate-800/40 rounded-xl

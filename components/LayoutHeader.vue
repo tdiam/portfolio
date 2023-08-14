@@ -14,7 +14,7 @@ const menu = useMenu()
         <li class="hidden md:block">
           <NuxtLink to="/">
             <tippy theme="light-border" placement="bottom-start" :offset="[0, 20]">
-              <AvatarImg class="w-8 -mt-1 drop-shadow" />
+              <AvatarImg sizes="md:64px" class="w-8 -mt-1 drop-shadow" />
               <template #content>
                 <div class="p-2 text-lg">
                   <h4 class="font-semibold">Theodoros Diamantidis</h4>
