@@ -4,12 +4,16 @@ import svgLoader from 'vite-svg-loader'
 export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
+    '@nuxt/image',
     '@nuxtjs/google-fonts',
     '@nuxtjs/tailwindcss',
     'nuxt-icon',
   ],
   content: {
     // https://content.nuxtjs.org/api/configuration
+  },
+  image: {
+
   },
   vite: {
     plugins: [

@@ -1,5 +1,5 @@
 <template>
-  <img
+  <nuxt-img
     src="/avatar.png"
     width="264"
     height="280"
