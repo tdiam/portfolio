@@ -6,6 +6,9 @@ useHead({
     const base = 'Theodoros Diamantidis | Web & Software Engineer'
     return title ? `${title} | ${base}` : base
   },
+  htmlAttrs: {
+    lang: 'en',
+  },
 })
 
 const route = useRoute()
