@@ -12,8 +12,10 @@ const TAG_LIMIT = 5
         :src="project.image"
         :alt="`Screenshot or cover image from ${project.title}`"
         loading="lazy"
-        sizes="sm:100vw 2xl:33vw"
-        class="rounded-t-lg shadow-inner" />
+        sizes="md:100vw 2xl:33vw"
+        class="rounded-t-lg shadow-inner"
+        width="747"
+        height="420" />
     </NuxtLink>
     <div class="pt-3 pb-5 px-5 md:p-6">
       <ul class="flex flex-row flex-wrap">

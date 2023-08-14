@@ -20,6 +20,8 @@
         :src="doc.image"
         loading="lazy"
         sizes="md:100vw lg:1600px"
+        width="1600"
+        height="900"
         :alt="`Screenshot or cover image from ${doc.title}`"
         :class="`
           project-image w-full md:w-[80%]
