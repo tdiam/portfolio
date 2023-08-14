@@ -4,7 +4,7 @@ const menu = useMenu()
 
 <template>
   <div class="flex py-12 md:py-16 bg-purple-900 text-white">
-    <footer class="w-full max-w-5xl mx-auto text-center md:text-left">
+    <footer class="w-full max-w-5xl mx-auto md:px-6 text-center md:text-left">
       <h4 class="text-xl md:text-3xl font-medium tracking-wide">
         Get in touch
       </h4>

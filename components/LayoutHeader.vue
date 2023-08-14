@@ -5,9 +5,9 @@ const menu = useMenu()
 <template>
   <nav
     :class="`
-      fixed bottom-0 z-30 md:static bg-white md:bg-transparent
+      fixed bottom-0 z-30 md:static min-w-full md:min-w-none bg-white md:bg-transparent
       shadow-[0_-2px_6px_2px_rgb(0_0_0_/_0.1)] md:shadow-none
-      container flex flex-wrap items-center justify-between md:py-12
+      container flex flex-wrap items-center justify-between md:px-6 md:py-12
     `">
     <div class="items-center justify-between w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
       <ul class="grid grid-flow-col font-semibold md:flex md:flex-row md:space-x-12 md:mt-0">

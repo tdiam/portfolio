@@ -15,8 +15,10 @@ const projectsQuery: QueryBuilderParams = {
           Hi, I'm Theodoros Diamantidis!
         </h2>
         <h1 :class="`
-          md:-mt-2 text-2xl/relaxed md:text-5xl/relaxed font-extrabold text-transparent
-          bg-clip-text bg-gradient-to-b from-purple-900 via-purple-900 to-black
+          md:-mt-2
+          text-2xl/relaxed md:text-3xl/relaxed lg:text-5xl/relaxed
+          font-extrabold text-transparent bg-clip-text
+          bg-gradient-to-b from-purple-900 via-purple-900 to-black
         `">
           Web & Software Engineer
         </h1>
