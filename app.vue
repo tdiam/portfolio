@@ -37,7 +37,7 @@ const isProjectPage = computed(() => {
       :class="`
         relative z-10 max-w-[67rem] mx-auto
         ${''/* 100vh - footer height - nav height */}
-        min-h-[calc(100vh-14.75rem-(3.25rem+2px))] md:min-h-[70vh]
+        min-h-[calc(100dvh-14.75rem-(3.25rem+2px))] md:min-h-[70vh]
       `">
       <LayoutHeader />
       <main class="px-3 md:px-6 py-10 md:py-20">

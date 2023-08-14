@@ -7,7 +7,7 @@ useHead({
 <template>
   <div :class="`
       ${''/* 100vh - footer height - nav height - main y padding - contact info height */}
-      mt-[calc((100vh-14.75rem-(3.25rem+2px)-5rem-13.5rem)/2)] md:mt-0
+      mt-[calc((100dvh-14.75rem-(3.25rem+2px)-5rem-13.5rem)/2)] md:mt-0
       leading-loose text-xl text-center
     `">
     <h2 class="text-2xl tracking-wider font-semibold text-slate-800">
