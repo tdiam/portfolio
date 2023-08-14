@@ -10,6 +10,7 @@ const TAG_LIMIT = 5
       <nuxt-img
         v-if="project.image"
         :src="project.image"
+        :alt="`Screenshot or cover image from ${project.title}`"
         loading="lazy"
         sizes="sm:100vw 2xl:33vw"
         class="rounded-t-lg shadow-inner" />
