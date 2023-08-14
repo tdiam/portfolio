@@ -29,7 +29,9 @@ const isProjectPage = computed(() => {
     >
     <div
       v-if="isHome || isProjectPage"
-      :class="`absolute bg-[hsl(268,80%,95.5%)] w-full ${isHome ? 'h-[32rem]' : 'h-[28rem]'} md:h-[70vh]`">
+      :class="`
+        absolute bg-[hsl(268,80%,95.5%)] w-full
+        ${isHome ? 'h-[32rem] md:h-[40rem]' : 'h-[28rem] md:h-[40rem]'}`">
     </div>
     <div
       :class="`
