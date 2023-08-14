@@ -39,7 +39,7 @@ const skillsByLevel = computed(() => {
         {{ level }}
       </h4>
       <ul class="mt-1 flex flex-row flex-wrap">
-        <li v-for="tag in tags" class="mr-1 md:mr-2 mb-1 md:mb-2">
+        <li v-for="tag in tags" class="mr-1 md:mr-2 mb-2">
           <Tag :tag="tag.name" />
         </li>
       </ul>

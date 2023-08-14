@@ -18,7 +18,7 @@ const visibleTags = computed(() => {
 
 <template>
   <ul class="mt-8 mx-auto max-w-3xl flex flex-row flex-wrap justify-center">
-    <li v-for="([tag, count]) in visibleTags" class="mr-1 md:mr-2 mb-1 md:mb-2">
+    <li v-for="([tag, count]) in visibleTags" class="mr-1 md:mr-2 mb-2">
       <Tag :tag="tag" :count="count" />
     </li>
     <li v-if="!isShowAllTags && tags.length > TAG_LIMIT">
