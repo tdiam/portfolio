@@ -7,6 +7,9 @@ useHead({
 
 const projectsQuery: QueryBuilderParams = {
   path: '/projects',
+  sort: [
+    { title: 1 },
+  ],
 }
 </script>
 
