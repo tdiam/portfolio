@@ -5,7 +5,7 @@
       and volunteering environments.
     </p>
     <p class="mt-4">
-      Currently in Mytilene, Greece.
+      Currently in Skydra, Greece.
     </p>
   </div>
 </template>
