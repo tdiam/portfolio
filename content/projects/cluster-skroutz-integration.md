@@ -16,7 +16,7 @@ tags:
   - gitlab
   - docker
   - bash
-  - cluster
+  - clustercis
 links:
   - title: Product website
     url: https://cluster.gr/woocommerce-skroutz-smart-cart/
