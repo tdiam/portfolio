@@ -29,7 +29,7 @@ defineProps(['data'])
       <ContentRenderer
         v-if="data?.body?.children?.length"
         :value="data"
-        class="mt-3 text-sm font-medium text-slate-800" />
+        class="mt-3 prose prose-sm font-medium text-slate-800" />
       <slot name="actions"></slot>
     </div>
   </div>
