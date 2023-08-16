@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { data: skills } = await useAsyncData('skills', async () => {
-  return queryContent('/tags/skills/').find()
+  return queryContent('/tags/').find()
 })
 
 const tagCounts = await useTagsWithCount()

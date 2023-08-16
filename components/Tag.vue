@@ -13,7 +13,7 @@ async function onTrigger(instance: Instance) {
   instance.disable()
   if (tagData.value === null) {
     try {
-      const data = await queryContent(`/tags/skills/${normalizedTag.value}`).findOne()
+      const data = await queryContent(`/tags/${normalizedTag.value}`).findOne()
       tagData.value = data
     } catch (err) {
       if (err instanceof FetchError && err.statusCode === 404) {

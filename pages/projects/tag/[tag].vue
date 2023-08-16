@@ -9,7 +9,7 @@ useHead({
 })
 
 const { data: tagData } = useAsyncData(`tag:${tagFilter}`, () => {
-  return queryContent(`/tags/skills/${tagFilter}`).findOne()
+  return queryContent(`/tags/${tagFilter}`).findOne()
 })
 
 const projectsQuery: QueryBuilderParams = {
