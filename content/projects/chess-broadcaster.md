@@ -11,7 +11,6 @@ tags:
   - bootstrap
   - ajax
   - js
-  - json
 links:
   - title: Demo
     upon_request: true
