@@ -13,6 +13,7 @@ tags:
   - css
   - apollo
   - shmmy
+  - lib-ece
 links:
   - title: Demo
     upon_request: true
