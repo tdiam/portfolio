@@ -38,15 +38,15 @@ const projectsQuery: QueryBuilderParams = {
             `">
             Browse projects
           </NuxtLink>
-          <NuxtLink
-            to="/"
+          <a
+            href="/resume/Theodoros%20Diamantidis%20-%20Resume.pdf"
             :class="`
               rounded border border-slate-700 px-4 py-1
               text-sm md:text-lg font-semibold text-slate-700 uppercase transition
               hover:bg-purple-900 hover:text-white
             `">
             View resume
-          </NuxtLink>
+          </a>
         </div>
       </div>
       <div class="hidden md:block">
