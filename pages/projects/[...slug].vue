@@ -57,6 +57,16 @@
         prose-headings:mb-6
         prose-ul:list-disc
       `" />
+    <div class="mt-12">
+      <NuxtLink
+        to="/projects"
+        :class="`
+          block text-center text-base/loose md:text-lg/loose font-semibold
+          text-slate-700 hover:text-black
+        `">
+        <span aria-hidden="true">&laquo;</span> BACK TO PROJECTS
+      </NuxtLink>
+    </div>
   </ContentDoc>
 </template>
 
