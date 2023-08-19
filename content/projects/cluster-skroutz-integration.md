@@ -20,7 +20,7 @@ tags:
 links:
   - title: Product website
     url: https://cluster.gr/woocommerce-skroutz-smart-cart/
-  - title: Source code
+  - title: Demo
     upon_request: true
 ---
 
