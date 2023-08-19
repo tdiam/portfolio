@@ -47,6 +47,14 @@ function setAboutTab(tab: string) {
       <div v-show="aboutTab === 'awards'">
         <AboutAwards :limit="limit" />
       </div>
+      <NuxtLink
+        v-if="limit > 0"
+        to="/about"
+        :class="`
+          block ml-10 text-lg font-semibold text-slate-700 hover:text-black
+        `">
+        READ MORE <span aria-hidden="true">&raquo;</span>
+      </NuxtLink>
     </div>
   </div>
 </template>
