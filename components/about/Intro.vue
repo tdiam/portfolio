@@ -1,8 +1,8 @@
 <template>
   <div class="text-slate-800 md:text-xl md:leading-relaxed">
     <p>
-      I&#39;ve been coding for more than ten years for fun, and lately in professional
-      and volunteering environments.
+      10 years of experience crafting professional, volunteer, and personal
+      software projects, primarily using web technologies.
     </p>
     <p class="mt-4">
       Currently in Skydra, Greece.
