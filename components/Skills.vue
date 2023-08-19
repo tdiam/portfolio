@@ -5,22 +5,22 @@ const { data: skills } = await useAsyncData('skills', async () => {
 
 const tagCounts = await useTagsWithCount()
 
-const skillsByLevel = computed(() => {
-  const res: {[level: string]: any[]} = {
-    'Senior': [],
-    'Advanced': [],
-    'Familiar': [],
+const skillsByCategory = computed(() => {
+  const res: {[category: string]: any[]} = {
+    'Coding': [],
+    'Libraries & Frameworks': [],
+    'Environments': [],
   }
 
   for (const tag of unref(skills) || []) {
-    if (res.hasOwnProperty(tag.level)) {
+    if (res.hasOwnProperty(tag.skill)) {
       tag.name = tag._path?.split('/').pop()
-      res[tag.level].push(tag)
+      res[tag.skill].push(tag)
     }
   }
 
-  for (const level of Object.keys(res)) {
-    res[level].sort((a, b) => tagCounts[b.name] - tagCounts[a.name])
+  for (const category of Object.keys(res)) {
+    res[category].sort((a, b) => tagCounts[b.name] - tagCounts[a.name])
   }
 
   return res
@@ -33,14 +33,25 @@ const skillsByLevel = computed(() => {
       Skills
     </h3>
     <div
-      v-for="(tags, level) in skillsByLevel"
+      v-for="(tags, category) in skillsByCategory"
       class="py-4 border-b-2 border-slate-300">
       <h4 class="font-bold text-slate-800">
-        {{ level }}
+        {{ category }}
       </h4>
-      <ul class="mt-1 flex flex-row flex-wrap">
+      <ul class="mt-2 flex flex-row flex-wrap">
         <li v-for="tag in tags" class="mr-1 md:mr-2 mb-2">
           <Tag :tag="tag.name" />
+        </li>
+      </ul>
+    </div>
+    <div
+      class="py-4 border-b-2 border-slate-300">
+      <h4 class="font-bold text-slate-800">
+        Languages
+      </h4>
+      <ul class="mt-2 flex flex-col">
+        <li class="mb-2">
+          English (Proficient), Greek (Native)
         </li>
       </ul>
     </div>
