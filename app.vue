@@ -47,14 +47,3 @@ const isProjectPage = computed(() => {
     <LayoutFooter />
   </div>
 </template>
-
-<style type="text/css">
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s;
-}
-.fade-enter,
-.fade-leave-active {
-  opacity: 0;
-}
-</style>
