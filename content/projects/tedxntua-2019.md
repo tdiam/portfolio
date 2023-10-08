@@ -11,6 +11,7 @@ tags:
   - three.js
   - jquery
   - mysql
+  - sql
   - css
   - scss
   - js

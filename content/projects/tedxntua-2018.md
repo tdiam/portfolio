@@ -10,6 +10,7 @@ tags:
   - bootstrap
   - jquery
   - mysql
+  - sql
   - twig
   - css
   - scss
