@@ -8,6 +8,8 @@ tags:
   - java
   - javafx
   - gradle
+  - fxml
+  - css
 links:
   - title: Repository
     url: https://github.com/tdiam/airportcontrol/
