@@ -2,7 +2,7 @@
 title: Studyplanner
 description: Web app for university students
 dateStart: Jul 2018
-dateEnd: present
+dateEnd: Jun 2021
 image: /projects/studyplanner.png
 tags:
   - react

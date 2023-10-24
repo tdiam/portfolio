@@ -2,7 +2,7 @@
 title: shmmy Live Display
 description: Campus info dashboard app
 dateStart: Jul 2018
-dateEnd: present
+dateEnd: Jun 2021
 image: /projects/shmmy-live-display.png
 tags:
   - express

@@ -2,7 +2,7 @@
 title: shmmywikibot
 description: Python script to edit MediaWiki content
 dateStart: Jul 2018
-dateEnd: present
+dateEnd: Jun 2021
 image: /projects/shmmywikibot.png
 tags:
   - python
