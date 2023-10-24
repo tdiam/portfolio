@@ -18,6 +18,7 @@
     "vite-svg-loader": "^4.0.0"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.1.1",
     "vue-tippy": "v6"
   }
 }
