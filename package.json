@@ -20,5 +20,12 @@
   "dependencies": {
     "@vercel/analytics": "^1.1.1",
     "vue-tippy": "v6"
+  },
+  "pnpm": {
+    "overrides": {
+      "postcss@<8.4.31": ">=8.4.31",
+      "undici@<5.26.2": ">=5.26.2",
+      "@babel/traverse@<7.23.2": ">=7.23.2"
+    }
   }
 }
