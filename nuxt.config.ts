@@ -30,6 +30,7 @@ export default defineNuxtConfig({
     '/about': pageCacheOpts,
     '/projects/**': pageCacheOpts,
     '/contact': pageCacheOpts,
+    '/cluster-go-core': { redirect: '/projects/cluster-go-core' },
   },
   googleFonts: {
     download: false,
