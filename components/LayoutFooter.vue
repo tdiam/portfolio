@@ -10,12 +10,12 @@ const menu = useMenu()
       </h4>
       <div class="block mt-2 md:mt-3">
         <a
-          href="mailto:diamaltho@gmail.com"
+          href="mailto:tdiam@posteo.net"
           :class="`
             text-2xl md:text-6xl font-bold tracking-wide
             hover:border-b-4 hover:border-white
           `">
-          diamaltho@gmail.com
+          tdiam@posteo.net
         </a>
       </div>
       <div class="flex mt-12 justify-center md:justify-start">

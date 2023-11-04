@@ -18,7 +18,7 @@ useHead({
     </p>
     <ul class="mt-8 flex flex-col">
       <li>
-        <a href="mailto:diamaltho@gmail.com" class="group group-hover:text-black">
+        <a href="mailto:tdiam@posteo.net" class="group group-hover:text-black">
           <Icon name="uil:envelope" size="1.25em" class="-mt-0.5 mr-0.5 text-slate-700 group-hover:text-black" />
           e-mail
         </a>
