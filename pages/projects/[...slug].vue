@@ -33,7 +33,10 @@
         <li v-for="(link, idx) in doc.links" class="mr-2 mb-1">
           <span v-if="idx > 0" class="hidden md:inline mr-2" aria-hidden="true">&bull;</span>
           <template v-if="link.upon_request">
-            <ProseA href="mailto:tdiam@posteo.net">
+            <ProseA :href="
+              `mailto:tdiam@posteo.net?subject=${
+                encodeURIComponent(`Request for ${link.title} of your ${doc.title} project`)
+              }`">
               {{ link.title }}
               (available upon request)
             </ProseA>
