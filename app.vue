@@ -11,6 +11,18 @@ useHead({
   },
 })
 
+const description = 'A showcase of projects I\'ve built or worked on as a ' +
+  'software engineer. 10 years of experience crafting professional, ' +
+  'volunteer, and personal software projects, primarily using web technologies.'
+
+useSeoMeta({
+  description: description,
+  ogDescription: description,
+  ogImage: 'https://portfolio.tdiam.me/_vercel/image?url=/projects/portfolio.png&w=768&q=100',
+  twitterCard: 'summary_large_image',
+  author: 'Theodore Diamantidis',
+})
+
 const route = useRoute()
 const isHome = computed(() => {
   return route.path === '/'
