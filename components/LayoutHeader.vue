@@ -17,7 +17,7 @@ const menu = useMenu()
               <AvatarImg sizes="md:64px" class="w-8 -mt-1 drop-shadow" />
               <template #content>
                 <div class="p-2 text-lg">
-                  <h4 class="font-semibold">Theodoros Diamantidis</h4>
+                  <h4 class="font-semibold">Theo Diamantidis</h4>
                   <p>Web & Software Engineer</p>
                 </div>
               </template>

@@ -10,7 +10,7 @@ useHead({
       About me
     </h1>
     <h2 class="mt-16 text-center text-xl lg:text-2xl tracking-wider font-medium text-slate-800">
-      Hi, I'm Theodoros Diamantidis!
+      Hi, I'm Theo Diamantidis!
     </h2>
     <p class="mt-2 text-center text-lg md:text-xl font-light">Web & Software Engineer</p>
     <div class="mt-4 flex justify-center">

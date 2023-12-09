@@ -11,10 +11,10 @@ useHead({
       leading-loose text-xl text-center
     `">
     <h2 class="text-2xl tracking-wider font-semibold text-slate-800">
-      Theodoros Diamantidis
+      Theo Diamantidis
     </h2>
     <p class="mt-2">
-      Skydra, Greece
+      Greece
     </p>
     <ul class="mt-8 flex flex-col">
       <li>

@@ -3,7 +3,7 @@ import { computed } from 'vue'
 
 useHead({
   titleTemplate: title => {
-    const base = 'Theodoros Diamantidis | Web & Software Engineer'
+    const base = 'Theo Diamantidis | Web & Software Engineer'
     return title ? `${title} | ${base}` : base
   },
   htmlAttrs: {

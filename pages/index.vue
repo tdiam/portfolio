@@ -12,7 +12,7 @@ const projectsQuery: QueryBuilderParams = {
     <div class="flex flex-col items-center justify-between md:flex-row md:space-x-12">
       <div class="text-center md:text-left">
         <h2 class="text-md md:text-2xl tracking-wider font-semibold text-slate-800">
-          Hi, I'm Theodoros Diamantidis!
+          Hi, I'm Theo Diamantidis!
         </h2>
         <h1 :class="`
           md:-mt-2
