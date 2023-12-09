@@ -13,9 +13,6 @@ useHead({
     <h2 class="text-2xl tracking-wider font-semibold text-slate-800">
       Theo Diamantidis
     </h2>
-    <p class="mt-2">
-      Greece
-    </p>
     <ul class="mt-8 flex flex-col">
       <li>
         <a href="mailto:tdiam@posteo.net" class="group group-hover:text-black">
