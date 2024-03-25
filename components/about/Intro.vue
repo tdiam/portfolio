@@ -4,5 +4,8 @@
       Crafting professional, volunteer, and personal
       software projects, primarily using web technologies, since 2012.
     </p>
+    <p class="mt-4">
+      Currently in Dublin, Ireland.
+    </p>
   </div>
 </template>
