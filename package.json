@@ -13,7 +13,7 @@
     "@nuxtjs/google-fonts": "^3.0.2",
     "@nuxtjs/tailwindcss": "^6.6.4",
     "@tailwindcss/typography": "^0.5.9",
-    "nuxt": "^3.6.5",
+    "nuxt": "^3.11.1",
     "nuxt-icon": "^0.3.3",
     "vite-svg-loader": "^4.0.0"
   },
@@ -25,7 +25,12 @@
     "overrides": {
       "postcss@<8.4.31": ">=8.4.31",
       "undici@<5.26.2": ">=5.26.2",
-      "@babel/traverse@<7.23.2": ">=7.23.2"
+      "@babel/traverse@<7.23.2": ">=7.23.2",
+      "sharp@<0.32.6": ">=0.32.6",
+      "vite@>=4.0.0 <=4.5.1": ">=4.5.2",
+      "follow-redirects@<1.15.4": ">=1.15.4",
+      "undici@<=5.28.2": ">=5.28.3",
+      "follow-redirects@<=1.15.5": ">=1.15.6"
     }
   }
 }
