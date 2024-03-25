@@ -5,6 +5,7 @@ defineProps(['limit'])
 
 const query: QueryBuilderParams = {
   path: '/cv/experience',
+  sort: { _file: -1, $numeric: true },
 }
 </script>
 
