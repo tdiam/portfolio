@@ -2,7 +2,7 @@
 title: Cluster Skroutz Integration
 description: WooCommerce plugin
 dateStart: Apr 2021
-dateEnd: present
+dateEnd: Feb 2024
 image: /projects/cluster-skroutz-integration.png
 tags:
   - php
@@ -35,7 +35,7 @@ and users are able to read the order's information, accept or reject it or
 specific items thereof, print shipment tracking codes, and more.
 
 WooCommerce Skroutz Smart Cart is a product of [Cluster CIS](https://cluster.gr)
-and my role as a **lead engineer** for the project includes code development and
+and my role as a **lead engineer** for the project included code development and
 code review.
 
 ### Technical overview
