@@ -32,6 +32,10 @@ export default defineNuxtConfig({
     '/contact': pageCacheOpts,
     '/cluster-go-core': { redirect: '/projects/cluster-go-core' },
   },
+  nitro: {
+    // Dokploy build containers can OOM during Nitro minification
+    minify: false,
+  },
   googleFonts: {
     download: false,
     families: {
